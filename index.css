@@ -1,9 +1,16 @@
-h1{
+h1, p{
   color: green;
   text-align: center;
 }
 .example{
   background-color: red;
   height: 20px;
-  
+}
+h2.ejemplo{
+  color: white;
+  font-size: 40px;
+}
+#colors{
+  background-color: 'rgba(#e01313, 1)';
+  color:red;
 }
