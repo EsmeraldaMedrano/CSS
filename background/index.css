@@ -46,6 +46,10 @@ div.polaroid{
 }
 .polaroid img{
   opacity:.5;
+  /*filter: blur(5px);--> la imagen se ve borrosa*/
+  /*filter: brightness(1);--> aumenta o disminuye el brillo 1 es normal
+  contrast();   grayscale();
+  hue-rotate(grados 180deg);   invert();     saturate();    sepia();*/
 }
 .polaroid img:hover{
   opacity:1;
