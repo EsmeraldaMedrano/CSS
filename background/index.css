@@ -1,0 +1,8 @@
+body{
+  background: linear-gradient(red,yellow);
+  background-image: url("nav.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #fbdfa1;
+  background-attachment: fixed;
+}
