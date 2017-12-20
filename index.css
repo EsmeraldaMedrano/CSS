@@ -6,6 +6,7 @@ h1, p{
   background-color: red;
   height: 20px;
 }
+<<<<<<< HEAD
 h2.example{
   color: white;
   height: 40px;
@@ -22,4 +23,13 @@ h2.example{
 }
 #red{
   color: red
+=======
+h2.ejemplo{
+  color: white;
+  font-size: 40px;
+}
+#colors{
+  background-color: 'rgba(#e01313, 1)';
+  color:red;
+>>>>>>> origin/master
 }

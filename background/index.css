@@ -5,4 +5,54 @@ body{
   background-repeat: no-repeat;
   background-color: #fbdfa1;
   background-attachment: fixed;
+  align-items: center;
+}
+div{
+  margin: auto;
+}
+h1{
+  color: rgb(50, 62, 77);
+  font-family: 'Dancing Script', cursive;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 5px 5px 5px #536c77;
+  margin: 10px;
+}
+.esfera{
+  position: absolute;
+  width: 80px;
+  margin-left: 48%;
+  box-shadow:; /*paraimagenes*/
+  cursor: pointer;
+}
+.esfera:hover{
+  position: absolute;
+  width: 100px;
+}
+.responsive{
+  height: auto;
+  max-width: 100%;
+}
+div.polaroid{
+  position:inherit;
+  margin:auto;
+  margin-top: 200px;
+  background-color: white;
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 10px;
+  box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+  display: inline-block;
+}
+.polaroid img{
+  opacity:.5;
+}
+.polaroid img:hover{
+  opacity:1;
+}
+.text{
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-style: bold;
+  font-size: 20px;
 }
