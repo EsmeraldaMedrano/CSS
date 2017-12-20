@@ -24,10 +24,14 @@ h1{
   margin-left: 48%;
   box-shadow:; /*paraimagenes*/
   cursor: pointer;
+  transition: width .3s;
 }
 .esfera:hover{
   position: absolute;
   width: 100px;
+  animation-name: ejemplo;
+  animation-duration: 2s; /*duración de la animación*/
+  /*animation-delay: ;retardo para empezar la animación*/
 }
 .responsive{
   height: auto;
@@ -43,6 +47,23 @@ div.polaroid{
   margin-bottom: 10px;
   box-shadow: 5px 5px 10px rgba(0,0,0,.5);
   display: inline-block;
+  /*transition: transform 1s;*/
+  animation-name: skew;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  /*transform: translate(x y); -->mueve la imagen
+               rotate(20deg);--> rota la imagen
+               scale(X Y  "2 es el doble" ); --> aumenta el tamaño
+               skew(grados) lo modifica de modo que es un rombo;*/
+  /*transition: transform 2s; realiza la transicion especificada en el tiempo especificado
+  transition-delay: 1s; la transicion empieza despues de un tiempo
+  se puede combinar por ejemplo  que rote mientras crece: rotate(); y width:
+
+  transition-timing-function: ease; inicio lento y final lento
+                              ease-in; inicia lento
+                              ease-out; termina lento
+                              ease-in-out; todo es lento
+                              lineaqr -->misma velocidad de inicio a fin*/
 }
 .polaroid img{
   opacity:.5;
@@ -51,6 +72,9 @@ div.polaroid{
   contrast();   grayscale();
   hue-rotate(grados 180deg);   invert();     saturate();    sepia();*/
 }
+/*div.polaroid:hover{
+  transform: rotate(20deg);
+}*/
 .polaroid img:hover{
   opacity:1;
 }
@@ -59,4 +83,16 @@ div.polaroid{
   text-align: center;
   font-style: bold;
   font-size: 20px;
+}
+@keyframes example {
+  from{background-color: red}
+  to{background-color: blue}
+  /*0%{}
+  50%{}
+  70%{}*/
+}
+@keyframes skew {
+  0%{transform: rotate(20deg);}
+  50%{transform: rotate(-20deg);}
+  100%{transform: rotate(20deg);}
 }
